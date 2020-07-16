@@ -1,0 +1,50 @@
+
+# comment lines start with "#"
+# created by Aleks Hughes 2019-03-19 for my blog flexibleframework.xyz
+name: avocados_py37
+channels:
+- defaults
+dependencies:
+# conda installed packages are pinned with a single "=", e.g.:
+# - certifi=2018.10.15
+- python=3.7
+- pip>19.0
+- cython
+- certifi
+- setuptools
+- vc
+- vs2015_runtime
+- wheel
+- wincertstore
+- numpy
+- pandas
+- py
+- pystan
+- scikit-learn>=0.23.0
+- scipy
+- pip:
+# an unpinned list of go-to packages that I typically want in all my new projects
+# NONE of below are pinned to make take the latest available and compatible when creating a new project environment. They should be pinned before distributing or comitting as project environment reference
+# below line is an example of pinning ipyevents to version "0.3.1"
+# - ipyevents==0.3.1
+# example syntax to pip install from github, see https://stackoverflow.com/a/35998253/3596968
+# git+git://github.com/path/to/package-two@releases/tag/v3.7.1#egg=package-two
+  - ipyevents
+  - ipykernel
+  - ipython
+  - ipython-genutils
+  - jupyter
+  - jupyter-client
+  - jupyter-console
+  - jupyter-core
+  - notebook
+  - pmdarima
+  - tbats
+  - sktime
+  - matplotlib
+  - seaborn
+  - linearmodels
+  - plotly
+  - fbprophet
+  - tbats
+  - dask
